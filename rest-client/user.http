@@ -1,0 +1,31 @@
+# Get the users
+GET http://localhost:3000/users
+
+###
+
+# Add a new user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "István",
+  "age": 30
+}
+
+###
+
+# Modify an existing user's data
+PUT http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+  "name": "Pista",
+  "age": 31
+}
+
+###
+
+# Delete an existing user
+DELETE http://localhost:3000/users/1
+
+###
